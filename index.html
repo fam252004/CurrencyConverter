@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+<h2>Currency Converter</h2>
+<form id="converter-form">
+    <label for="amount">Enter Amount</label>
+    <input type="number" id="amount" value="1" min="1" required/>
+    <label for="from">From</label>
+    <select name="" id="from">
+  <option value="USD" selected>USD</option>
+  <option value="EUR">EUR</option>
+  <option value="INR">INR</option>
+  <option value="GBP">GBP</option>
+  <option value="JPY">JPY</option>
+  <option value="AUD">AUD</option>
+  <option value="CAD">CAD</option>
+  <option value="CNY">CNY</option>
+  <option value="SGD">SGD</option>
+  <option value="ZAR">ZAR</option>
+  <option value="RUB">RUB</option>
+  <option value="SEK">SEK</option>
+  <option value="CHF">CHF</option>
+  <option value="THB">THB</option>
+  <option value="MXN">MXN</option>
+
+    </select>
+    <label for="to">To</label>
+    <select name="" id="to">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="INR" selected>INR</option>
+  <option value="GBP">GBP</option>
+  <option value="JPY">JPY</option>
+  <option value="AUD">AUD</option>
+  <option value="CAD">CAD</option>
+  <option value="CNY">CNY</option>
+  <option value="SGD">SGD</option>
+  <option value="ZAR">ZAR</option>
+  <option value="RUB">RUB</option>
+  <option value="SEK">SEK</option>
+  <option value="CHF">CHF</option>
+  <option value="THB">THB</option>
+  <option value="MXN">MXN</option>
+    </select>
+    <button type="submit">Convert</button>
+</form>
+<div class="result" id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
